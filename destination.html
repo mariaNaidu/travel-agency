@@ -1,0 +1,172 @@
+---
+layout: default
+title: Destination page
+destination:
+  - icon:
+    icon-head: Shop
+    to-do: these are the things you can do
+  - icon:
+    icon-head: Eat
+    to-do: these are the things you can do
+  - icon:
+    icon-head: Explore
+    to-do: these are the things you can do
+  - icon:
+    icon-head: Learn
+    to-do: these are the things you can do
+review-grid:
+  - customer: Blossom
+    review: This is a review.
+    stars: &#9733;&#9733;&#9733;&#9733;
+  - customer: Bubbles
+    review:This is a review.
+    stars:&#9733;&#9733;&#9733;&#9733;&#9733;
+  - customer: Buttercup
+    review:This is a review.
+    stars:&#9733;&#9733;&#9733;&#9733;
+faq:
+  - question: question?
+    answer: answer answer answer
+  - question: question?
+    answer: answer answer answer
+  - question: question?
+    answer: answer answer answer
+---
+
+<!------------------------BANNER-------------------------->
+<section>
+  <div class="col-5 right">
+    <h2>
+      Name
+    </h2>
+    <p>
+      This is a tagline.
+    </p>
+</section>
+<!-----------------------HEADING AND TEXT--------------------------->
+<section>
+  <h2>
+    Information
+  </h2>
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  </p>
+</section>
+<!----------------------ICON GRID---------------------------->
+<section class="padded">
+  <h2>
+    Things to do:
+  </h2>
+  <div class="grid">
+
+  {% for item in page.destination %}
+
+    <div class="col-3_md-6_sm-12">
+      <i class="{{item.icon}}"> </i>
+      <h3>
+          {{item.icon-head}}
+      </h3>
+      <p>
+        {{item.to-do}}
+      </p>
+    </div>
+
+  {% endfor %}
+  </div>
+</section>
+
+<!---------------------------- FACTS --------------------------->
+  <section>
+    <h2> FACTS </h2>
+    <p>
+      > This is fact one.
+    </p>
+    <p>
+      > This is fact two.
+    </p>
+    <p>
+      > This is fact three.
+    </p>
+    <p>
+      > This is fact four.
+    </p>
+  </section>
+<!-------------------RESPONSIVE VIDEO (HISTORY)------------------>
+<section class="grid">
+  <div class="col-6_sm-12">
+     <!--VIDEO-->
+  </div>
+  <div class="col-6_sm-12 padded centered">
+    <h3>
+      History
+    </h3>
+    <p>
+      This is a brief line.
+    </p>
+  </div>
+</section>
+<!--------------------------REVIEW---------------------------->
+<section>
+  <div class="grid">
+
+  {% for item in page.review-grid %}
+
+    <div class="col-4_sm-12">
+      <img src="{{item.review-img}}">
+      <h4>
+        {{item.customer}}
+      </h4>
+      <p>
+        {{item.review}}
+      </p>
+      <p>
+        {{item.stars}}
+      </div>
+
+  {% endfor %}
+
+  </div>
+</section>
+
+<!--------------------------LIGHT BOX GALLERY---------------------------->
+
+<section>
+  <h2>
+    Gallery
+  </h2>
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+  </p>
+  <div>
+    <img src="#">
+    <img src="#">
+    <img src="#">
+    <img src="#">
+    <img src="#">
+    <img src="#">
+  </div>
+</section>
+<!-------------------------------------FAQs-------------------------------->
+
+  {% for item in page.faq %}
+
+<details>
+  <summary>
+    {{item.question}}
+  </summary>
+  <p>
+    {{item.answer}}
+  </p>
+</details>
+
+  {% endfor %}
+
+<!---------------------------------------CONTACT FORM--------------------->
+<section>
+  <div class="grid">
+    <h3>
+      For more information:
+    </h3>
+
+  </div>
+</section>
