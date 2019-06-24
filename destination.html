@@ -19,11 +19,11 @@ review-grid:
     review: This is a review.
     stars: &#9733;&#9733;&#9733;&#9733;
   - customer: Bubbles
-    review:This is a review.
-    stars:&#9733;&#9733;&#9733;&#9733;&#9733;
+    review: This is a review.
+    stars: &#9733;&#9733;&#9733;&#9733;&#9733;
   - customer: Buttercup
-    review:This is a review.
-    stars:&#9733;&#9733;&#9733;&#9733;
+    review: This is a review.
+    stars: &#9733;&#9733;&#9733;&#9733;
 faq:
   - question: question?
     answer: answer answer answer
@@ -108,6 +108,9 @@ faq:
 <!--------------------------REVIEW---------------------------->
 <section>
   <div class="grid">
+    <h2>
+      Reviews 
+    </h2>
 
   {% for item in page.review-grid %}
 
@@ -121,7 +124,8 @@ faq:
       </p>
       <p>
         {{item.stars}}
-      </div>
+      </p>
+    </div>
 
   {% endfor %}
 

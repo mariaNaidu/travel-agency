@@ -1,0 +1,21 @@
+---
+layout : default
+title: Review
+
+---
+
+<section class="grid">
+
+{% for item in page.comment %}
+
+  <div class="col-6_sm-12">
+    <div class="padded">
+      <h4> {{item.name}} </h4>
+      <img src="{{item.pic}}">
+      <p> {{item.content}} </p>
+    </div>
+  </div>
+
+{% endfor %}
+
+</section>
