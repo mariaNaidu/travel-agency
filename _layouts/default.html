@@ -2,11 +2,12 @@
 <html>
 
 <!----------------------------HEAD---------------------------->
+
 <head>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css" />
 
 </head>
 <!----------------------------TITLE--------------------------->
@@ -14,56 +15,65 @@
   {{page.title}}
 </title>
 <!------------------------------BODY-------------------------->
+
 <body>
-<!-------------------------- HEADER -------------------------->
+  <!-------------------------- HEADER -------------------------->
   <header class=" centered">
-    <h1>
-      LOGO
-    </h1>
-<!----------------------------NAV LINKS----------------------->
-    <nav class="centered padded">
-      <a href="#"> About us</a>
-      <a href="#"> Destinations </a>
-      <a href="#"> Reviews </a>
-      <a href="#"> Contact </a>
+    <a href="home.html">
+      <h1>
+        LOGO
+      </h1>
+    </a>
+    <!----------------------------NAV LINKS----------------------->
+    <div class="hamburger"> |||| </div>
+    <nav class=" mobile-nav centered padded-2">
+      <a href="about.html"> About </a>
+      <a href="destination.html"> Destinations </a>
+      <a href="revieww.html"> Reviews </a>
+      <a href="contact.html"> Contact </a>
     </nav>
   </header>
 
 
 
- {{content}}
+  {{content}}
 
 
 
-<!-------------------------- FOOTER -------------------------->
-<footer class="grid">
-  <div class="col-3">
-    <h2> LOGO </h2>
-    <p> this is the footer </p>
-  </div>
-  <div class="col-3"> </div>
-  <div class="col-2">
-    <h3>
-      Explore
-    </h3>
-    <p>
-      ......
-    </p>
-  </div>
-  <div class="col-2">
-    <h3>
-      Contact
-    </h3>
-    <p>
-      ......
-    </p>
-  </div>
-  <div class="col-2">
-    <h3>
-      Connect
-    </h3>
-    <nav>
-      <i  class>
-  </div>
-  </body>
+  <!-------------------------- FOOTER -------------------------->
+  <footer class="grid">
+    <div class="col-3">
+      <h2> LOGO </h2>
+      <p> this is the footer </p>
+    </div>
+    <div class="col-3"> </div>
+    <div class="col-2">
+      <h3>
+        Explore
+      </h3>
+      <p>
+        ......
+      </p>
+    </div>
+    <div class="col-2">
+      <h3>
+        Contact
+      </h3>
+      <p>
+        ......
+      </p>
+    </div>
+    <div class="col-2">
+      <h3>
+        Connect
+      </h3>
+      <nav>
+        <i class>
+    </div>
+  </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"> </script>
+  <script src="/scripts/main.js"> </script>
+
+</body>
+
 </html>

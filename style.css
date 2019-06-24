@@ -2,7 +2,7 @@
   margin:0;
   padding:0;
   box-sizing: border-box;
-  border: 1px solid grey;
+  /* border: 1px solid grey; */
 }
 
 /* -------------------UTILITIES-------------------- */
@@ -10,6 +10,7 @@
 .padded{ padding:5%;}
 .padded-1{ padding:1rem;}
 .padded-2{ padding:2rem;}
+.marginbottom{margin-bottom:10%;}
 
 .left{text-align: left;}
 .right{text-align: right;}
@@ -26,3 +27,20 @@ h1{ font-size: 2.5rem;}
 h2{font-size:2rem;}
 h3{font-size:1.5rem;}
 h4{font-size:1rem;}
+
+header{
+  position: fixed;
+  left:0;
+  right:0;
+  top:0;
+}
+header, footer{
+  background-color: grey;
+  color:white;
+}
+body{
+  padding-top: 10rem;
+}
+ a{
+  text-decoration: none;
+}
