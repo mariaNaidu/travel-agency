@@ -2,28 +2,29 @@
 layout: default
 title: Destination page
 destination:
-  - icon:
+  - icon: moo
     icon-head: Shop
     to-do: these are the things you can do
-  - icon:
+  - icon: moo
     icon-head: Eat
     to-do: these are the things you can do
-  - icon:
+  - icon: poo
     icon-head: Explore
     to-do: these are the things you can do
-  - icon:
+  - icon: boo
     icon-head: Learn
     to-do: these are the things you can do
 review-grid:
   - customer: Blossom
+    review-img: bob
     review: This is a review.
-    stars: &#9733;&#9733;&#9733;&#9733;
+    stars: ★★★★
   - customer: Bubbles
     review: This is a review.
-    stars: &#9733;&#9733;&#9733;&#9733;&#9733;
+    stars: ★★★★★
   - customer: Buttercup
     review: This is a review.
-    stars: &#9733;&#9733;&#9733;&#9733;
+    stars: ★★★★
 faq:
   - question: question?
     answer: answer answer answer
@@ -107,10 +108,11 @@ faq:
 </section>
 <!--------------------------REVIEW---------------------------->
 <section>
+  <h2>
+    Reviews
+  </h2>
+
   <div class="grid">
-    <h2>
-      Reviews 
-    </h2>
 
   {% for item in page.review-grid %}
 

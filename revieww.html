@@ -1,18 +1,59 @@
 ---
 layout : default
 title: Review
-
+comment:
+  - pic: pic
+    name: Blossom
+    content: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
+    star: ★★★★★
+  - pic: pic
+    name: Bubbles
+    content: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
+    star: ★★★★★
+  - pic: pic
+    name: Buttercup
+    content: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
+    star: ★★★★★
+  - pic: pic
+    name: Karine
+    content: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
+    star: ★★★★★
+  - pic: pic
+    name: Karla
+    content: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
+    star: ★★★★★
+  - pic: pic
+    name: Emma
+    content: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
+    star: ★★★★★
+  - pic: pic
+    name: Jaz
+    content: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
+    star: ★★★★★
+  - pic: pic
+    name: Bernedette
+    content: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
+    star: ★★★★★
+  - pic: pic
+    name: Laurie
+    content: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
+    star: ★★★★★
+  - pic: pic
+    name: Jake
+    content: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
+    star: ★★★★★
 ---
 
-<section class="grid">
+<section class="grid padded">
 
 {% for item in page.comment %}
 
-  <div class="col-6_sm-12">
+  <div class="col-6_sm-12 padded-1">
     <div class="padded">
-      <h4> {{item.name}} </h4>
       <img src="{{item.pic}}">
+      <h4> {{item.name}} </h4>
       <p> {{item.content}} </p>
+      <p> {{item.star}} </p>
     </div>
   </div>
 

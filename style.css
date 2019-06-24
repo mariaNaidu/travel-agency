@@ -20,6 +20,8 @@
 .upper{text-transform: uppercase;}
 .lower{text-transform: lowercase;}
 
+.line-height{ line-height: 2px;}
+
 h1{ font-size: 2.5rem;}
 h2{font-size:2rem;}
 h3{font-size:1.5rem;}
