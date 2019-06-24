@@ -1,0 +1,15 @@
+---
+layout: default
+destinations:
+  - place: _destinations/bangalore.html
+  - place: _destinations/goa.html
+  - place: _destinations/manali.html
+---
+
+<section class="padded">
+{% for destination in site.destinations %}
+  <a href="{{ destination.url }}">
+    {{ destination.title }}
+  </a>
+{% endfor %}
+</section>

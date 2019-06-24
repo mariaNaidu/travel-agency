@@ -26,7 +26,13 @@
 h1{ font-size: 2.5rem;}
 h2{font-size:2rem;}
 h3{font-size:1.5rem;}
-h4{font-size:1rem;}
+h4{
+  font-size:1rem;
+}
+h5{
+  font-size: 0.9rem;
+  font-family: 'Allura', cursive;
+}
 
 header{
   position: fixed;
@@ -35,12 +41,21 @@ header{
   top:0;
 }
 header, footer{
-  background-color: grey;
+  background-color: Pink;
   color:white;
 }
 body{
   padding-top: 10rem;
+  color: grey;
+  font-family: 'Nunito', sans-serif;
 }
  a{
   text-decoration: none;
+}
+.banner{
+  background-image:url(images/banner.jpg);
+  min-height: 70vh;
+  background-size: cover;
+  background-attachment: fixed;
+  text-align: right;
 }

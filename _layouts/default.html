@@ -6,8 +6,10 @@
 <head>
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css" />
+  <link href="https://fonts.googleapis.com/css?family=Allura|Nunito:300,400,600,700&display=swap" rel="stylesheet">
+
 
 </head>
 <!----------------------------TITLE--------------------------->
@@ -19,21 +21,20 @@
 <body>
   <!-------------------------- HEADER -------------------------->
   <header class=" centered">
-    <a href="home.html">
+    <a href="/index.html">
       <h1>
         LOGO
       </h1>
     </a>
     <!----------------------------NAV LINKS----------------------->
     <div class="hamburger"> |||| </div>
-    <nav class=" mobile-nav centered padded-2">
-      <a href="about.html"> About </a>
-      <a href="destination.html"> Destinations </a>
-      <a href="revieww.html"> Reviews </a>
-      <a href="contact.html"> Contact </a>
+    <nav class="mobile-nav centered padded-2">
+      <a href="/about"> About </a>
+      <a href="/destinations"> Destinations </a>
+      <a href="/review"> Reviews </a>
+      <a href="/contact"> Contact </a>
     </nav>
   </header>
-
 
 
   {{content}}
@@ -41,7 +42,7 @@
 
 
   <!-------------------------- FOOTER -------------------------->
-  <footer class="grid">
+  <footer class="grid padded">
     <div class="col-3">
       <h2> LOGO </h2>
       <p> this is the footer </p>
@@ -67,8 +68,16 @@
       <h3>
         Connect
       </h3>
-      <nav>
-        <i class>
+      <nav class="socials">
+       <a href=#>
+         <i class="fab fa-facebook-square"> </i>
+       </a>
+       <a href="#">
+        <i class="fab fa-instagram"> </i>
+       </a>
+       <a href="#">
+        <i class="fab fa-youtube"> </i>
+       </a>
     </div>
   </footer>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"> </script>

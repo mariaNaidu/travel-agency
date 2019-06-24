@@ -1,40 +1,16 @@
 ---
 layout: default
-title: Destination page
-destination:
-  - icon: moo
-    icon-head: Shop
-    to-do: these are the things you can do
-  - icon: moo
-    icon-head: Eat
-    to-do: these are the things you can do
-  - icon: poo
-    icon-head: Explore
-    to-do: these are the things you can do
-  - icon: boo
-    icon-head: Learn
-    to-do: these are the things you can do
-review-grid:
-  - customer: Blossom
-    review-img: bob
-    review: This is a review.
-    stars: ★★★★
-  - customer: Bubbles
-    review: This is a review.
-    stars: ★★★★★
-  - customer: Buttercup
-    review: This is a review.
-    stars: ★★★★
-faq:
-  - question: question?
-    answer: answer answer answer
-  - question: question?
-    answer: answer answer answer
-  - question: question?
-    answer: answer answer answer
+price:
+  - type: Basic
+    cost: $500
+    description: Lorem ipsum dolor sit amet
+  - type: Comfort
+    cost: $1000
+    description: Lorem ipsum dolor sit amet, consectetur adipisi pariatur.
+  - type: Luxury
+    cost: $2000
+    description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
 ---
-
-<!------------------------BANNER-------------------------->
 <section>
   <div class="col-5 right">
     <h2>
@@ -63,7 +39,7 @@ faq:
   {% for item in page.destination %}
 
     <div class="col-3_md-6_sm-12">
-      <i class="{{item.icon}}"> </i>
+      <i class="fas {{item.icon}}"> </i>
       <h3>
           {{item.icon-head}}
       </h3>
@@ -152,6 +128,31 @@ faq:
     <img src="#">
   </div>
 </section>
+<!-------------------------------------PRICING-------------------------------->
+<section>
+  <h2>
+    Package Price
+  </h2>
+  <div class="grid centered">
+
+{% for item in layout.price %}
+
+    <div class="col-4_sm-12 padded">
+      <p>
+        {{item.type}}
+      </p>
+      <p>
+        {{item.cost}}
+      </p>
+      <p>
+        {{item.description}}
+      </p>
+    </div>
+{% endfor %}
+
+  </div>
+</section>
+
 <!-------------------------------------FAQs-------------------------------->
 
   {% for item in page.faq %}
