@@ -35,6 +35,10 @@ h5{
   font-family: 'Allura', cursive;
 }
 
+img {
+  max-width: 100%;
+}
+
 header{
   position: fixed;
   left:0;
@@ -42,8 +46,12 @@ header{
   top:0;
 }
 header, footer{
-  background-color: Pink;
-  color:white;
+  background-color: white;
+  color:teal;
+}
+.hamburger{
+  font-size: 2rem;
+  color: teal;
 }
 body{
   padding-top: 10rem;
@@ -52,6 +60,7 @@ body{
 }
  a{
   text-decoration: none;
+  color: teal;
 }
 .banner{
   background-image:url(images/banner.jpg);
@@ -59,8 +68,29 @@ body{
   background-size: cover;
   background-attachment: fixed;
   text-align: right;
+  background-position: top;
+}
+.banner-destination{
+  margin:4rem;
+  background-attachment: scroll;
+  min-height: 70vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.city{
+  position:absolute;
+  top:-1rem;
+  right:1rem;
 }
 .fas{
   font-size: 2rem;
   margin-bottom: 1.5rem;
+}
+.gallery{
+  max-height: 50%;
+}
+.masonry{
+  column-count: 3;
+  column-gap:1rem;
 }
