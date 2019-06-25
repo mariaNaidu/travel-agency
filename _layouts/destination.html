@@ -69,11 +69,10 @@ layout: default
   <h2>
     Reviews
   </h2>
-
   <div class="grid centered">
 
   {% assign location_reviews = site.reviews | where: 'destination', page.title %}
-  {% for item in location_reviews % | limit:3 %}
+  {% for item in location_reviews  limit:3 %}
 
   {% include review-card.html %}
 

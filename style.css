@@ -135,7 +135,12 @@ footer a {
   background-color: black;
   display: block;
   border-radius: 22px;
-  transition: 2s;
+  transition: 1s;
+}
+.burger-button .burger-middle{
+  border-color: teal;
+  background-color:#383;
+  width: 20px
 }
 .burger-button.active span{
   border-color: green;
@@ -227,17 +232,20 @@ footer a {
 }
 .city{
   position:absolute;
-  top:-1rem;
-  right:1rem;
+  top:-9.3rem;
+  right:-6rem;
 }
-
+.city h2{
+  font-size:7rem;
+  color: #ffb500;
+}
 .bg-image {
   padding: 6rem 1rem;
   background-size: cover;
   background-position: center;
   background-color: grey;
   filter: grayscale(1);
-  transition: 2s;
+  transition: 1s;
 }
 
 .bg-image:hover{

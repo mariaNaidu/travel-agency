@@ -7,10 +7,10 @@ title: Home
 <section class="banner grid-middle padded centered">
   <div class="col-12">
     <h2>
-      Name
+      IOC travel agency!
     </h2>
     <p>
-      This is the tagline.
+      For people who are too lazy to plan.
     </p>
   </div>
 </section>
@@ -20,16 +20,16 @@ title: Home
     <span class="quote-icon"> “ </span>
   </div>
   <div class="col-9 padded-1">
-    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    <p> Because in the end, you won’t remember the time you spent working in the office or mowing your lawn. Climb that goddamn mountain.
     <p>
-    <p> -Author name </p>
+    <p> - Jack Kerouac </p>
   </div>
 </section>
 
 <!-- destination list -->
 
 <section class="grid">
-{% for destination in site.destinations | limit:3 %}
+{% for destination in site.destinations limit:3 %}
 <div class="col-4 padded-1 centered">
   <a href="{{ destination.url }}">
     <div class="bg-image" style="background-image:url('{{destination.banner-image}}')">
