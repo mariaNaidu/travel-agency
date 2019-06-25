@@ -72,20 +72,10 @@ layout: default
 
   <div class="grid centered">
 
-  {% for item in page.review-grid %}
+  {% assign location_reviews = site.reviews | where: 'destination', page.title %}
+  {% for item in location_reviews % | limit:3 %}
 
-    <div class="col-4_sm-12 padded-1">
-      <a href="/review.html" class="review-box">
-      <img src="{{item.review-img}}" class="review-image">
-      <h4> {{item.customer}} </h4>
-      <p>
-        {{item.review}}
-      </p>
-      <p>
-        {{item.stars}}
-      </p>
-      </a>
-    </div>
+  {% include review-card.html %}
 
   {% endfor %}
 
