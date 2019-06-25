@@ -11,6 +11,7 @@
 .padded-1{ padding:1rem;}
 .padded-2{ padding:2rem;}
 .marginbottom{margin-bottom:10%;}
+.marginbottom1 {margin-bottom: 1rem;}
 
 .left{text-align: left;}
 .right{text-align: right;}
@@ -58,4 +59,8 @@ body{
   background-size: cover;
   background-attachment: fixed;
   text-align: right;
+}
+.fas{
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
 }
