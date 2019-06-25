@@ -5,6 +5,28 @@
   /* border: 1px solid grey; */
 }
 
+[class*=col] {
+  padding: 0;
+}
+[class*=grid] {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* ----------- Universal Styles ---------- */
+
+body{
+  padding-top: 5rem;
+  color: rgb(60,60,65);
+  font-family: 'Nunito', sans-serif;
+}
+a {
+  text-decoration: none;
+  color: teal;
+}
 /* -------------------UTILITIES-------------------- */
 
 .padded{ padding:5%;}
@@ -12,6 +34,11 @@
 .padded-2{ padding:2rem;}
 .marginbottom{margin-bottom:10%;}
 .marginbottom1 {margin-bottom: 1rem;}
+
+.capped-width {
+  max-width: 1200px;
+  margin:auto;
+}
 
 .left{text-align: left;}
 .right{text-align: right;}
@@ -22,55 +49,78 @@
 .upper{text-transform: uppercase;}
 .lower{text-transform: lowercase;}
 
-.line-height{ line-height: 2px;}
 
-h1{ font-size: 2.5rem;}
-h2{font-size:2rem;}
-h3{font-size:1.5rem;}
-h4{
-  font-size:1rem;
+/* ----------- typography  ------------- */
+
+h2,h3,h4,h5,h6,p {
+  margin-bottom:1rem;
 }
-h5{
+h2:last-child,
+h3:last-child,
+h4:last-child,
+h5:last-child,
+h6:last-child,
+p:last-child {
+  margin-bottom:0;
+}
+
+h1  { font-size: 2.5rem;}
+h2  { font-size:2rem;}
+h3  { font-size:1.5rem;}
+h4  { font-size:1rem;}
+
+h5  {
   font-size: 0.9rem;
   font-family: 'Allura', cursive;
 }
 
-img {
-  max-width: 100%;
+.fas{
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
 }
 
-header{
-  position: fixed;
-  left:0;
-  right:0;
-  top:0;
-}
+/* -------- header and footer -------------- */
+
 header, footer{
   background-color: white;
   color:teal;
 }
-.hamburger{
+
+header {
+  position: fixed;
+  left:0;
+  right:0;
+  top:0;
+  padding: 1% 5%;
+  border-bottom: 1px solid rgb(240,240,240);
+}
+
+footer {
+  border-top: 1px solid rgb(240,240,240);
+}
+
+footer a {
+  display: block;
+  color: rgb(60,60,60);
+}
+
+.hamburger {
   font-size: 2rem;
   color: teal;
+  display:none;
 }
-body{
-  padding-top: 10rem;
-  color: grey;
-  font-family: 'Nunito', sans-serif;
-}
- a{
-  text-decoration: none;
-  color: teal;
-}
-.banner{
+
+
+/* ----------- Banners ----------------*/
+.banner {
   background-image:url(images/banner.jpg);
   min-height: 70vh;
   background-size: cover;
   background-attachment: fixed;
-  text-align: right;
   background-position: top;
 }
-.banner-destination{
+
+.banner-destination {
   margin:4rem;
   background-attachment: scroll;
   min-height: 70vh;
@@ -83,14 +133,60 @@ body{
   top:-1rem;
   right:1rem;
 }
-.fas{
-  font-size: 2rem;
-  margin-bottom: 1.5rem;
+
+.bg-image {
+  padding: 6rem 1rem;
+  background-size: cover;
+  background-position: center;
+  background-color: grey;
 }
+
+.bg-image h3{
+  display: inline-block;
+  background-color: white;
+  padding: 0.5rem 2rem;
+}
+
+/* ----------- Gallery ----------------*/
+
 .gallery{
   max-height: 50%;
 }
 .masonry{
   column-count: 3;
   column-gap:1rem;
+}
+
+
+/*  -------- Reviews on destination page  ------------- */
+
+.review-image {
+  border-radius: 100%;
+  max-width:200px;
+  margin: 1rem auto;
+}
+
+.review-box {
+  color: rgb(60,60,60);
+
+}
+
+/* ----------- FAQs   ----------------*/
+
+summary {
+  color: teal;
+}
+
+summary:focus {
+  outline: none;
+}
+
+/* ----------- Media Queries  ----------------*/
+@media(max-width:576px) {
+  .hamburger {
+    display: block;
+  }
+  .mobile-nav {
+    display: none;
+  }
 }
