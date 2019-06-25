@@ -156,8 +156,22 @@ footer a {
   column-count: 3;
   column-gap:1rem;
 }
-
-
+/* -----------------Pricing--------------- */
+.typep{
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+.costp{
+  font-size:3rem;
+  font-weight: 300;
+  color: teal;
+}
+.card{
+  padding:2rem;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 20px 25px -5px rgba(0,0,0,.2), 0 10px 10px -5px rgba(0,0,0,.2);
+}
 /*  -------- Reviews on destination page  ------------- */
 
 .review-image {
@@ -180,6 +194,49 @@ summary {
 summary:focus {
   outline: none;
 }
+/* ----------------Forms---------------- */
+form input,
+form textarea {
+  width: 100%;
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  border: 1px solid rgb(220,220,220);
+}
+
+textarea {
+  min-height: 4rem;
+}
+
+form label {
+  margin: 1rem 0 0;
+  display: inline-block; /* This ads margin above each label. You need display inline block, because by default it's an inline element that won't accept vertical margin.*/
+  color: #6C7A89;
+  font-weight: bold;
+}
+
+/* Checkbox styles */
+
+form input[type="checkbox"]{
+  margin: 0 1em;
+  width: auto;
+  display:inline-block;
+}
+
+.checkboxes p {
+  margin:0.5rem 0;
+  font-size: 0.8rem;
+}
+.checkboxes {
+  margin: 0 0 1.5em;
+  padding:0!important;
+}
+
+form input[type="submit"] {
+  background-color:#6C7A89;
+  color:white;
+  border: none;
+}
+
 
 /* ----------- Media Queries  ----------------*/
 @media(max-width:576px) {

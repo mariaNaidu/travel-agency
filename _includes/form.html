@@ -1,0 +1,32 @@
+<form action="https://formspree.io/youemail@gmail.com" method="POST">
+  <div class="grid">
+      <div class="col-6_sm-12 padded">
+          <label for="name"> Your Name </label>
+          <input type="text" name="name" id="name" placeholder="Name" />
+
+          <label for="email"> Your Email </label>
+          <input type="email" name="_replyto" id="email" placeholder="Email" />
+
+          <label for="phone"> Your Phone Number </label>
+          <input type="tel" name="phone" id="phone" placeholder="+(Country Code) Phone Number" />
+      </div>
+
+      <div class="col-6_sm-12 padded">
+          <label>  What are you most interested in?  </label>
+          <div class="checkboxes">
+          <p>Basic package<input type="checkbox" name="interests" value="basic" /> </p>
+          <p>Comfort package<input type="checkbox" name="interests" value="comfort" /> </p>
+          <p>Luxury package<input type="checkbox" name="interests" value="luxury" /> </p>
+          </div>
+
+          <label for="message"> Tell me everything about you... </label>
+          <textarea name="message" id="message" placeholder="Hey I'm Joe and I want to know about the basic package..."></textarea>
+
+          <input type="submit" value="Submit" class="button" />
+      </div>
+
+    <!-- These are hidden fields -->
+    <input type="hidden" name="_cc" value="contact@theblondeabroad.com" />
+    <input type="text" name="_gotcha" style="display:none" />
+    <input type="hidden" name="_next" value="../register/blogging-thanks" />
+  </div></form>
