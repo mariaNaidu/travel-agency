@@ -14,6 +14,32 @@ title: Home
     </p>
   </div>
 </section>
+<!-- Quote -->
+<section class="grid padded centered">
+  <div class="col-3 padded-1">
+    <span class="quote-icon"> “ </span>
+  </div>
+  <div class="col-9 padded-1">
+    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    <p>
+    <p> -Author name </p>
+  </div>
+</section>
+
+<!-- destination list -->
+
+<section class="grid">
+{% for destination in site.destinations | limit:3 %}
+<div class="col-4 padded-1 centered">
+  <a href="{{ destination.url }}">
+    <div class="bg-image" style="background-image:url('{{destination.banner-image}}')">
+        <h3> {{ destination.title }}</h3>
+    </div>
+  </a>
+</div>
+{% endfor %}
+</section>
+
 <!-------------------------FORMS-------------------------->
 
 {% include form.html %}

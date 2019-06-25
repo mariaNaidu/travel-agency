@@ -91,7 +91,9 @@ layout: default
 
   <div class="masonry">
     {% for item in page.gallery %}
+    <a href="{{item}}" data-lightbox="{{page.title}}">
       <img src="{{ item }}">
+    </a>
     {% endfor %}
   </div>
 </section>

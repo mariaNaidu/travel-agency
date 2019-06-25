@@ -6,9 +6,10 @@
 <head>
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css">
-  <link rel="stylesheet" href="/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css" />
   <link href="https://fonts.googleapis.com/css?family=Allura|Nunito:300,400,600,700&display=swap" rel="stylesheet">
+  <link href="/lightbox/css/lightbox.css" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
 
   <!----------------------------TITLE--------------------------->
   <title>
@@ -30,8 +31,11 @@
     </a>
   </div>
     <!----------------------------NAV LINKS----------------------->
-    <div class="col-8 hamburger right"> |||| </div>
-    <nav class="col-8_xs-12 mobile-nav right padded-1">
+    <div class="col-8 burger-button right">
+      <span class="burger-top"></span>
+      <span class="burger-middle"></span>
+      <span class="burger-bottom"></span></div>
+    <nav class="col-8_xs-12  burger-menu right padded-1">
       <a href="/about"> About </a>
       <a href="/destinations"> Destinations </a>
       <a href="/review"> Reviews </a>
@@ -47,7 +51,7 @@
   <!-------------------------- FOOTER -------------------------->
   <footer class="grid padded">
     <div class="col-3">
-        <a href="/index.html">
+        <a href="/index.html padded centered">
             <h2> LOGO </h2>
         </a>
         <p> this is the footer </p>
@@ -57,9 +61,10 @@
     </div>
     <div class="col-2">
         <h3> Explore </h3>
-        <a href="/destinations/kerala"> Munnar </a>
-        <a href="/destinations/manali"> Manali </a>
+        <a href="/destinations/kerala"> Kerala </a>
+        <a href="/destinations/manali"> Bangalore </a>
         <a href="/destinations/goa"> Goa </a>
+        <a href="/destinations/hampi"> Hampi </a>
 
     </div>
     <div class="col-2">
@@ -82,6 +87,7 @@
     </div>
   </footer>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"> </script>
+  <script src="/lightbox/js/lightbox.js"></script>
   <script src="/scripts/main.js"> </script>
 
 </body>

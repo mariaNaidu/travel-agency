@@ -2,10 +2,9 @@
 
 $(document).ready(function(){
 // custom jquery stuff
-$(".hamburger").click(function(){
-  $(this).toggleClass('active');
-  $(".mobile-nav").slideToggle();
-});
+$(".burger-button").click(function(){
+  $(".burger-button").toggleClass("active");
+  $(".burger-menu").toggleClass("active");
 
 
 
