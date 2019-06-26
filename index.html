@@ -15,7 +15,7 @@ title: Home
   </div>
 </section>
 <!-- Quote -->
-<section class="grid padded centered">
+<section class="grid padded centered light-bg">
   <div class="col-3 padded-1">
     <span class="quote-icon"> “ </span>
   </div>
@@ -30,7 +30,7 @@ title: Home
 
 <section class="grid">
 {% for destination in site.destinations limit:3 %}
-<div class="col-4 padded-1 centered">
+<div class="col-4_sm-12 padded-1 centered">
   <a href="{{ destination.url }}">
     <div class="bg-image" style="background-image:url('{{destination.banner-image}}')">
         <h3> {{ destination.title }}</h3>

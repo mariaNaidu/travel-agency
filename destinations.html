@@ -6,12 +6,12 @@ destinations:
   - place: _destinations/manali.html
 ---
 
-<section class="padded grid">
+<section class="padded grid light-bg">
   <div class="col-12 centered">
     <h2> Destinations </h2>
    </div>
 {% for destination in site.destinations %}
-<div class="col-4 padded-1 centered">
+<div class="col-4_sm-12 padded-1 centered">
   <a href="{{ destination.url }}">
     <div class="bg-image" style="background-image:url('{{destination.banner-image}}')">
         <h3> {{ destination.title }}</h3>

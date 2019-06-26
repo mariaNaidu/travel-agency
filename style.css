@@ -25,18 +25,26 @@ a:hover{
 }
 
 .light-bg{
-  background-color: #E0F2F1;
+  background-color: #FAFAFA;
+}
+.socials{
+  display: inline-flex;
 }
 /* ----------- Universal Styles ---------- */
 
 body{
   padding-top: 5rem;
   color: rgb(60,60,65);
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Encode Sans Semi Expanded', sans-serif;
 }
 a {
   text-decoration: none;
   color: grey;
+}
+
+p {
+  font-size: 1.2rem;
+  line-height: 1.7;
 }
 /* -------------------UTILITIES-------------------- */
 
@@ -45,6 +53,7 @@ a {
 .padded-2{ padding:2rem;}
 .marginbottom{margin-bottom:10%;}
 .marginbottom1 {margin-bottom: 1rem;}
+.padded1{padding:5px;}
 
 .capped-width {
   max-width: 1200px;
@@ -75,14 +84,35 @@ p:last-child {
   margin-bottom:0;
 }
 
-h1  { font-size: 2.5rem;}
+h1  {
+  font-size: 2rem;
+}
+.logo  {
+  font-weight: 300;
+  letter-spacing: 1px;
+  margin-bottom: 0;
+}
+
 h2  { font-size:2rem;}
 h3  { font-size:1.5rem;}
 h4  { font-size:1rem;}
 
 h5  {
-  font-size: 0.9rem;
+  font-size: 2rem;
   font-family: 'Allura', cursive;
+}
+
+.about-name {
+  font-size: 1.5rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  background-color: teal;
+  color: white;
+  position: relative;
+  z-index:2;
+  margin: -1rem 2rem 1rem;
+  padding: 0.5rem;
 }
 
 .fas{
@@ -104,6 +134,7 @@ header {
   top:0;
   padding: 1% 5%;
   border-bottom: 1px solid rgb(240,240,240);
+  z-index: 5;
 }
 
 footer {
@@ -234,6 +265,7 @@ footer a {
   position:absolute;
   top:-9.3rem;
   right:-6rem;
+  font-family: 'Righteous', cursive;
 }
 .city h2{
   font-size:7rem;
